@@ -24,7 +24,7 @@ public class RPCClient{
 
     public RPCClient() throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("10.151.12.201");
+        factory.setHost("localhost");
         connection = (Connection) factory.newConnection();
         channel = connection.createChannel();
 
